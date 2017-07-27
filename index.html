@@ -2,8 +2,44 @@
 <html>
 <head>
   <title>耐斯达润滑脂</title>
+
+  <style type="text/css">
+    body {
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+    }
+    .img-container {
+      width: 90%;
+    }
+    .img-container img {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
   <h1>耐斯达润滑脂</h1>
+
+  <div id="imgContainer" class="img-container"></div>
+
+  <script type="text/javascript">
+    var container = document.getElementById("imgContainer")
+
+    for (var i = 1; i <= 12; i++) {
+      var img = new Image()
+      img.src = "WechatIMG"+ i +".jpeg"
+      container.appendChild(img)
+    }
+    var img1 = new Image()
+    img1.src = "WechatIMG21.jpeg"
+    container.appendChild(img1)
+
+    var img2 = new Image()
+    img2.src = "WechatIMG21.jpeg"
+    container.appendChild(img2)
+  </script>
 </body>
 </html>
